@@ -1,71 +1,62 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Classification - Credit Card Default Prediction
 
-![blueprint](images/blueprint.png)
+**Authors**: Brent Smart
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+## Overview
 
-## Repository Contents
+This project analyzes credit card payment history of customers of a Taiwanese credit card company from April 2005 - September 2005 in order to build a model that predicts whether or not an active customer will default on their line of credit. A customer's default represents lost income. The amount of a customer's sixth bill before they default represents a cost to the company. In this analysis customers' default cost this credit card company NT$ 306,733,698. The credit card company can use this predictive model to adjust outreach, resources, and approval for lines of credit.
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+## Business Problem
 
-- `README.md`: The README for this repo branch explaining it's contents - you're reading it now
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy)
-- `data` folder: A folder for the data you reference with your code
-- `images` folder: A folder for the images you reference in your files 
-- `.gitignore`: A hidden file that tells git to not track certain files and folders
+The company will be able to predict with 80% accuracy whether or not a customer will default on their line of credit. Doing so will help the company identify potential defaulters in order to evaluate the risk associated with doing business with that customer.
 
-## Instructions For Using This Repository
+## Data
 
-### Fork This Repository
+This project uses the "Default of Credit Card Clients Data Set" from the UCI Machine Learning Repository. The dataset provides payment history, some demographic data (sex, education, etc.), in addition to information on whether each customer will default on their line of credit for 30,000 customers. There are 23439 active card users. Hence, all features were used included in this analysis.
 
-**For a group project**, have only one team member do these steps:
 
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
+## Modeling
 
-3. Use `git clone` to clone your fork of this repo to your local computer
+The final model with the target variable Default_Next_Month includes all original columns. 
 
-4. **For a group project**, add team members as collaborators to your fork of this repo
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Manage Access" -> "Invite Teams or People"
-   - Add your project team members as collaborators & send them the repo GitHub URL
+## Evaluation
 
-### Work In Your Fork Of This Repository
+The model underwent four interactions, each time investigating how well the model addressed Accuracy, Recall, and Precision. At the end the final model showed overall improvement in accuracy. 
 
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
+## Conclusions
 
-### Use The Slide Template
-
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-3. **For a group project**, click the "Share" button and add your teammates as editors
-
-### Tidy Up Your Project
-
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - This README file: `README.md`
-   - Any unused data files in the `data` folder
-   - Any unused images in the `images` folder
-
-### Submit Your Project
-
-To submit your project, please follow the instructions in the "Project Submission & Review" page in the Milestones course.
+Provide your conclusions about the work you've done, including any limitations or next steps.
 
 ***
-### Notes
+Questions to consider:
+* What would you recommend the business do as a result of this work?
+* What are some reasons why your analysis might not fully solve the business problem?
+* What else could you do in the future to improve this project?
+***
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go
+## For More Information
+
+Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+
+For any additional questions, please contact **name & email, name & email**
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md        <-- Main README file explaining the project's business case,
+│                        methodology, and findings
+│
+├── data             <-- Data in CSV format
+│   ├── processed    <-- Processed (combined, cleaned) data used for modeling
+│   └── raw          <-- Original (immutable) data dump
+│
+├── notebooks        <-- Jupyter Notebooks for exploration and presentation
+│   ├── exploratory  <-- Unpolished exploratory data analysis (EDA) notebooks
+│   └── report       <-- Polished final notebook(s)
+│
+├── references       <-- Data dictionaries, manuals, and project instructions
+│
+└── reports          <-- Generated analysis (including presentation.pdf)
+    └── figures      <-- Generated graphics and figures to be used in reporting
