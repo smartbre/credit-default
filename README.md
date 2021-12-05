@@ -21,42 +21,27 @@ The final model with the target variable Default_Next_Month includes all origina
 
 ## Evaluation
 
-The model underwent four interactions, each time investigating how well the model addressed Accuracy, Recall, and Precision. At the end the final model showed overall improvement in accuracy. 
+The model underwent multiple interactions, each time investigating how well the model addressed Accuracy, Recall, and Precision. Accuracy was emphasized to prevent misidentify defaulting customers. At the end the final model showed overall improvement in accuracy. 
 
-## Conclusions
-
-Provide your conclusions about the work you've done, including any limitations or next steps.
-
-***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./credit_default/notebooks/report/Classification - Credit Card Default Prediction (Models Notebook).ipynb) or our [presentation](./credit_default/reports/Phase 3_ Classification Models - Credit Card Default Prediction.pdf).
 
-For any additional questions, please contact **name & email, name & email**
+For any additional questions, please contact **Brent Smart smartbrent1@gmail.com**
 
 ## Repository Structure
-
-Describe the structure of your repository and its contents, for example:
 
 ```
 ├── README.md        <-- Main README file explaining the project's business case,
 │                        methodology, and findings
 │
-├── data             <-- Data in CSV format
-│   ├── processed    <-- Processed (combined, cleaned) data used for modeling
-│   └── raw          <-- Original (immutable) data dump
+├── data             
+│   └── raw          <-- Data in excel format
 │
 ├── notebooks        <-- Jupyter Notebooks for exploration and presentation
 │   ├── exploratory  <-- Unpolished exploratory data analysis (EDA) notebooks
 │   └── report       <-- Polished final notebook(s)
-│
-├── references       <-- Data dictionaries, manuals, and project instructions
 │
 └── reports          <-- Generated analysis (including presentation.pdf)
     └── figures      <-- Generated graphics and figures to be used in reporting
