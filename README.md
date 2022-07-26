@@ -1,3 +1,5 @@
+<img src="header.jpg" alt="Repo Header"/><br/>
+
 # Classification - Credit Card Default Prediction
 
 **Authors**: Brent Smart
