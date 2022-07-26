@@ -1,6 +1,8 @@
 <img src="header.jpg" alt="Repo Header"/><br/>
 
-# Classification - Credit Card Default Prediction
+# Classification - Credit Card Default Predictor
+
+![GitHub last commit](https://img.shields.io/github/last-commit/smartbre/credit-default)<br/>
 
 **Authors**: Brent Smart
 
