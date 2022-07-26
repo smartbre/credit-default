@@ -16,7 +16,7 @@ The company will be able to predict with 80% accuracy whether or not a customer 
 
 ## Data
 
-This project uses the "Default of Credit Card Clients Data Set" from the UCI Machine Learning Repository. The dataset provides payment history, some demographic data (sex, education, etc.), in addition to information on whether each customer will default on their line of credit for 30,000 customers. There are 23439 active card users. Hence, all features were used included in this analysis.
+This project uses the "Default of Credit Card Clients Data Set" from the UCI Machine Learning Repository. The dataset provides payment history, some demographic data (sex, education, etc.), in addition to information on whether each customer will default on their line of credit for 30,000 customers. There are 23439 active card users. Hence, all features were included in this analysis.
 
 
 ## Modeling
@@ -25,14 +25,14 @@ The final model with the target variable Default_Next_Month includes all origina
 
 ## Evaluation
 
-The model underwent multiple interactions, each time investigating how well the model addressed Accuracy, Recall, and Precision. Accuracy was emphasized to prevent misidentify defaulting customers. At the end the final model showed overall improvement in accuracy. 
+The model underwent multiple interactions, each time investigating how well the model addressed Accuracy, Recall, and Precision. Accuracy was emphasized to prevent misidentifying defaulting customers. At the end the final model showed overall improvement in accuracy. 
 
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./credit_default/notebooks/report/Classification - Credit Card Default Prediction (Models Notebook).ipynb) or our [presentation](./credit_default/reports/Phase 3_ Classification Models - Credit Card Default Prediction.pdf).
+Please review our full analysis in [our Jupyter Notebook](./credit_default/notebooks/report/Credit Card Default Prediction Models.ipynb) or our [presentation](./Credit Card Default Prediction Models Jupyter Notebook.pdf).
 
-For any additional questions, please contact **Brent Smart smartbrent1@gmail.com**
+For any additional questions, please contact **Brent Smart chatconsmartbre@gmail.com**
 
 ## Repository Structure
 
