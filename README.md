@@ -30,7 +30,7 @@ The model underwent multiple interactions, each time investigating how well the 
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./credit_default/notebooks/report/Credit Card Default Prediction Models.ipynb) or our [presentation](./Credit Card Default Prediction Models Jupyter Notebook.pdf).
+Please review our full analysis in [our Jupyter Notebook](./notebooks/report/Credit Card Default Prediction Models.ipynb) or our [presentation](./Credit Card Default Prediction Models Jupyter Notebook.pdf).
 
 For any additional questions, please contact **Brent Smart chatconsmartbre@gmail.com**
 
